@@ -122,6 +122,19 @@ public class Alumno {
     }
 }
     
+   public void ver_datos(){
+    System.out.println("======================================");
+    System.out.println("        DATOS DEL ALUMNO              ");
+    System.out.println("======================================");
+    System.out.println("Nombre:            " + this.nombre);
+    System.out.println("Tipo de documento: " + this.tipodocumento);
+    System.out.println("Número documento:  " + this.numerodocumento);
+    System.out.println("Nivel socioeconómico: " + this.nivelsocioeconomico);
+    System.out.println("Tipo de beca:      " + this.tipobeca);
+    System.out.println("--------------------------------------");
+    System.out.printf("PENSIÓN A PAGAR:   S/ %.2f%n", this.calcularPension());
+    System.out.println("======================================");
+   } 
 }
 
     
