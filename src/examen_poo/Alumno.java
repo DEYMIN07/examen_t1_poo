@@ -15,4 +15,12 @@ public class Alumno {
     private char nivelsocioeconomico;
     private String tipobeca;
 
+    public Alumno() {
+    }
+    
+    
+
 }
+
+    
+
