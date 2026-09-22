@@ -100,6 +100,28 @@ public class Alumno {
             return false;
         }
     }
+    public double calcularPension() {
+    double tarifaBase;
+    
+    if (nivelsocioeconomico == 'A') {
+        tarifaBase = 500.00;
+    } else if (nivelsocioeconomico == 'B') {
+        tarifaBase = 350.00;
+    } else if (nivelsocioeconomico == 'C') {
+        tarifaBase = 200.00;
+    } else {
+        tarifaBase = 0;
+    }
+    
+    if (tipobeca.equals("Parcial")) {
+        return tarifaBase * 0.50;
+    } else if (tipobeca.equals("Total")) {
+        return 0.00;
+    } else {
+        return tarifaBase;
+    }
+}
+    
 }
 
     
